@@ -1,0 +1,126 @@
+<!--Name: Mutukutti Kankanamge Akindu Kalhan-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Application Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2 >Application Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="contactNumber">Contact Number *</label>
+            <input type="text" id="contactNumber" name="contactNumber" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="qualification">Highest Qualification *</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="institution">Institution Name *</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="gradYear">Year of Graduation *</label>
+            <input type="text" id="gradYear" name="gradYear" required>
+
+            <label for="fieldOfStudy">Major/Field of Study *</label>
+            <input type="text" id="fieldOfStudy" name="fieldOfStudy" required>
+
+            <label for="gpa">GPA/Percentage *</label>
+            <input type="text" id="gpa" name="gpa" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Jobs</legend>
+            <label for="jobCategory">Job Category *</label>
+            <select id="jobCategory" name="jobCategory" required>
+                <option value="category1">Information Technology</option>
+                <option value="category2">Sales and Marketing</option>
+                <option value="category3">Finance and Accounting</option>
+                <option value="category4">Customer Service</option>
+                <option value="category5">Engineering</option>
+                <option value="category6">Human Resources</option>
+                <option value="category7">Healthcare</option>
+                <option value="category8">Education</option>
+                <option value="category9">Hospitality and Tourism</option>
+                <option value="category10">Retail</option>
+                <option value="category11">Administration</option>
+                <option value="category12">Legal</option>
+                <option value="category13">Creative and Design</option>
+                <option value="category14">Operations</option>
+                <option value="category15">Project Management</option>
+                <option value="category16">Other</option>                
+            </select>
+            <label>Other (Mention Other Job Category)</label>
+            <input type="text" id="otherCategory" name="otherCategory">
+
+            <label for="location">Preferred Location</label>
+            <input type="text" id="location" name="location">
+
+            <label for="salary">Desired Salary</label>
+            <input type="text" id="salary" name="salary">
+        </fieldset>
+
+        <fieldset>
+            <legend>Motivation Statement</legend>
+            <textarea id="motivation" name="motivation"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
